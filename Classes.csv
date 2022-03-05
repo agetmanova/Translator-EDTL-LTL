@@ -1,34 +1,42 @@
-6,false
-3,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin)))
-3,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (inv U fin)))
-2,G((trig ∧ inv) → (inv U (rel ∨ rea)))
-2,G((trig ∧ inv) → (inv U rea))
-2,G((trig ∧ inv) → (inv U rel))
-9,G((trig ∧ inv) → (inv W rel))
-3,G(¬(trig ∧ inv ∧ fin))
-3,G(¬(trig ∧ inv))
-2,G(trig → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea))))
-2,G(trig → ((¬fin W rel) ∨ F(fin ∧ rel)))
-3,G(trig → ((¬fin W rel) ∨ F(fin)))
-3,G(trig → (¬fin))
-2,G(trig → F(fin ∧ rea))
-2,G(trig → F(rea))
-2,G(trig → F(rel ∨ rea))
-2,G(trig → F(rel))
-3,G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U fin)))
-3,G(inv → (G(inv ∧ ¬fin) ∨ (inv U fin)))
-2,G(inv → (inv U (rel ∨ rea)))
-2,G(inv → (inv U rea))
-2,G(inv → (inv U rel))
-9,G(inv → (inv W rel))
-3,G(¬(inv ∧ fin))
-3,G(¬inv)
-2,G((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))
-2,G((¬fin W rel) ∨ F(fin ∧ rel))
-3,G((¬fin W rel) ∨ F(fin))
-3,G(¬fin)
-2,GF(fin ∧ rea)
-2,GF(rea)
-2,GF(rel ∨ rea)
-2,GF(rel)
-354,true
+Class formula,capacity
+((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),2
+((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ rel))),2
+((trig ∧ ¬rel) → (inv U (rel ∨ rea))),2
+((trig ∧ ¬rel) → (inv U rel)),2
+((trig ∧ ¬rel) → F(rel ∨ rea)),2
+((trig ∧ ¬rel) → F(rel)),2
+(trig → (inv U rea)),2
+(trig → F(fin ∧ rea)),2
+(trig → F(rea)),2
+(¬rel → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),2
+(¬rel → ((¬fin W rel) ∨ F(fin ∧ rel))),2
+(¬rel → (inv U (rel ∨ rea))),2
+(¬rel → (inv U rel)),2
+F(rel ∨ rea),2
+F(rel),2
+(inv U rea),2
+F(fin ∧ rea),2
+F(rea),2
+((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),3
+((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),3
+((trig ∧ ¬rel) → inv),3
+(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),3
+(trig → G(¬fin)),3
+(trig → G(inv ∧ ¬fin)),3
+(trig → inv),3
+(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),3
+(¬rel → ((¬fin W rel) ∨ F(fin))),3
+(¬rel → inv),3
+(G(inv ∧ ¬fin) ∨ (inv U fin)),3
+G(¬fin),3
+G(inv ∧ ¬fin),3
+inv,3
+((trig ∧ ¬rel) → (inv W rel)),9
+(trig → G(inv)),9
+(¬rel → (inv W rel)),9
+G(inv),9
+¬(trig ∧ ¬rel),27
+rel,27
+¬trig,33
+false,33
+true,216

@@ -1,72 +1,140 @@
 rel,del,fin,rea,inv,trigger = trig,trig = true,trig = false
-false,true,true,false,true,false,false,true
-false,del,true,false,true,false,false,true
-false,false,true,false,true,false,false,true
-rel,true,fin,rea,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U (rel ∨ rea))))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U (rel ∨ rea))))),true
-rel,true,fin,false,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U rel)))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U rel)))),true
-rel,del,fin,rea,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ del) U (rel ∨ rea)))))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ del) U (rel ∨ rea)))))),true
-rel,del,fin,false,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ del) U rel))))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ del) U rel))))),true
-rel,false,fin,rea,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ (rel ∨ rea))))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ (rel ∨ rea))))),true
-rel,false,fin,false,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ rel)))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ rel)))),true
-rel,true,fin,true,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
-rel,false,fin,true,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
-rel,del,fin,true,inv,G((trig ∧ inv) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),G(inv → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
-false,true,fin,rea,inv,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (fin ∧ (inv U rea)))),G(inv → (G(inv ∧ ¬fin) ∨ (fin ∧ (inv U rea)))),true
-false,del,fin,rea,inv,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ ((inv ∧ del) U rea))))),G(inv → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ ((inv ∧ del) U rea))))),true
-false,false,fin,rea,inv,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ rea)))),G(inv → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ rea)))),true
-false,del,fin,true,inv,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (inv U fin))),G(inv → (G(inv ∧ ¬fin) ∨ (inv U fin))),true
-false,true,fin,true,inv,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (inv U fin))),G(inv → (G(inv ∧ ¬fin) ∨ (inv U fin))),true
-false,false,fin,true,inv,G((trig ∧ inv) → (G(inv ∧ ¬fin) ∨ (inv U fin))),G(inv → (G(inv ∧ ¬fin) ∨ (inv U fin))),true
-rel,del,true,rea,inv,G((trig ∧ inv) → (inv U ((inv ∧ del) U (rel ∨ rea)))),G(inv → (inv U ((inv ∧ del) U (rel ∨ rea)))),true
-false,del,true,rea,inv,G((trig ∧ inv) → (inv U ((inv ∧ del) U rea))),G(inv → (inv U ((inv ∧ del) U rea))),true
-rel,del,true,false,inv,G((trig ∧ inv) → (inv U ((inv ∧ del) U rel))),G(inv → (inv U ((inv ∧ del) U rel))),true
-rel,true,true,rea,inv,G((trig ∧ inv) → (inv U (rel ∨ rea))),G(inv → (inv U (rel ∨ rea))),true
-rel,false,true,rea,inv,G((trig ∧ inv) → (inv U (rel ∨ rea))),G(inv → (inv U (rel ∨ rea))),true
-false,true,true,rea,inv,G((trig ∧ inv) → (inv U rea)),G(inv → (inv U rea)),true
-false,false,true,rea,inv,G((trig ∧ inv) → (inv U rea)),G(inv → (inv U rea)),true
-rel,false,true,false,inv,G((trig ∧ inv) → (inv U rel)),G(inv → (inv U rel)),true
-rel,true,true,false,inv,G((trig ∧ inv) → (inv U rel)),G(inv → (inv U rel)),true
-rel,del,false,rea,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,del,false,true,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,del,false,false,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,true,false,rea,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,true,false,true,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,true,false,false,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,false,false,rea,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,false,false,true,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-rel,false,false,false,inv,G((trig ∧ inv) → (inv W rel)),G(inv → (inv W rel)),true
-false,true,fin,false,inv,G(¬(trig ∧ inv ∧ fin)),G(¬(inv ∧ fin)),true
-false,false,fin,false,inv,G(¬(trig ∧ inv ∧ fin)),G(¬(inv ∧ fin)),true
-false,del,fin,false,inv,G(¬(trig ∧ inv ∧ fin)),G(¬(inv ∧ fin)),true
-false,del,true,false,inv,G(¬(trig ∧ inv)),G(¬inv),true
-false,true,true,false,inv,G(¬(trig ∧ inv)),G(¬inv),true
-false,false,true,false,inv,G(¬(trig ∧ inv)),G(¬inv),true
-rel,del,fin,rea,true,G(trig → ((¬fin W rel) ∨ F(fin ∧ (del U (rel ∨ rea))))),G((¬fin W rel) ∨ F(fin ∧ (del U (rel ∨ rea)))),true
-rel,del,fin,false,true,G(trig → ((¬fin W rel) ∨ F(fin ∧ (del U rel)))),G((¬fin W rel) ∨ F(fin ∧ (del U rel))),true
-rel,true,fin,rea,true,G(trig → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),G((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea))),true
-rel,false,fin,rea,true,G(trig → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),G((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea))),true
-rel,true,fin,false,true,G(trig → ((¬fin W rel) ∨ F(fin ∧ rel))),G((¬fin W rel) ∨ F(fin ∧ rel)),true
-rel,false,fin,false,true,G(trig → ((¬fin W rel) ∨ F(fin ∧ rel))),G((¬fin W rel) ∨ F(fin ∧ rel)),true
-rel,true,fin,true,true,G(trig → ((¬fin W rel) ∨ F(fin))),G((¬fin W rel) ∨ F(fin)),true
-rel,false,fin,true,true,G(trig → ((¬fin W rel) ∨ F(fin))),G((¬fin W rel) ∨ F(fin)),true
-rel,del,fin,true,true,G(trig → ((¬fin W rel) ∨ F(fin))),G((¬fin W rel) ∨ F(fin)),true
-false,false,fin,false,true,G(trig → (¬fin)),G(¬fin),true
-false,del,fin,false,true,G(trig → (¬fin)),G(¬fin),true
-false,true,fin,false,true,G(trig → (¬fin)),G(¬fin),true
-rel,del,true,rea,true,G(trig → F(del U (rel ∨ rea))),GF(del U (rel ∨ rea)),true
-false,del,true,rea,true,G(trig → F(del U rea)),GF(del U rea),true
-rel,del,true,false,true,G(trig → F(del U rel)),GF(del U rel),true
-false,del,fin,rea,true,G(trig → F(fin ∧ (del U rea))),GF(fin ∧ (del U rea)),true
-false,true,fin,rea,true,G(trig → F(fin ∧ rea)),GF(fin ∧ rea),true
-false,false,fin,rea,true,G(trig → F(fin ∧ rea)),GF(fin ∧ rea),true
-false,true,true,rea,true,G(trig → F(rea)),GF(rea),true
-false,false,true,rea,true,G(trig → F(rea)),GF(rea),true
-rel,false,true,rea,true,G(trig → F(rel ∨ rea)),GF(rel ∨ rea),true
-rel,true,true,rea,true,G(trig → F(rel ∨ rea)),GF(rel ∨ rea),true
-rel,false,true,false,true,G(trig → F(rel)),GF(rel),true
-rel,true,true,false,true,G(trig → F(rel)),GF(rel),true
+rel,false,fin,rea,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U (rel ∨ rea))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U (rel ∨ rea))))),true
+rel,false,fin,false,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U rel)))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U rel)))),true
+rel,del,fin,rea,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U (rel ∨ rea)))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U (rel ∨ rea)))))),true
+rel,del,fin,false,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rel))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rel))))),true
+rel,true,fin,rea,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ (rel ∨ rea))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ (rel ∨ rea))))),true
+rel,true,fin,false,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ rel)))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ rel)))),true
+rel,true,fin,true,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
+rel,false,fin,true,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
+rel,del,fin,true,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
+rel,del,fin,rea,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (¬del U (rel ∨ rea))))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (¬del U (rel ∨ rea))))),true
+rel,del,fin,false,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (¬del U rel)))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (¬del U rel)))),true
+rel,true,fin,rea,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),true
+rel,false,fin,rea,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),true
+rel,true,fin,false,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ rel))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ rel))),true
+rel,false,fin,false,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ rel))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ rel))),true
+rel,true,fin,true,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),(¬rel → ((¬fin W rel) ∨ F(fin))),true
+rel,false,fin,true,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),(¬rel → ((¬fin W rel) ∨ F(fin))),true
+rel,del,fin,true,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),(¬rel → ((¬fin W rel) ∨ F(fin))),true
+rel,del,true,rea,inv,((trig ∧ ¬rel) → (inv U ((inv ∧ ¬del) U (rel ∨ rea)))),(¬rel → (inv U ((inv ∧ ¬del) U (rel ∨ rea)))),true
+rel,del,true,false,inv,((trig ∧ ¬rel) → (inv U ((inv ∧ ¬del) U rel))),(¬rel → (inv U ((inv ∧ ¬del) U rel))),true
+rel,true,true,rea,inv,((trig ∧ ¬rel) → (inv U (rel ∨ rea))),(¬rel → (inv U (rel ∨ rea))),true
+rel,false,true,rea,inv,((trig ∧ ¬rel) → (inv U (rel ∨ rea))),(¬rel → (inv U (rel ∨ rea))),true
+rel,false,true,false,inv,((trig ∧ ¬rel) → (inv U rel)),(¬rel → (inv U rel)),true
+rel,true,true,false,inv,((trig ∧ ¬rel) → (inv U rel)),(¬rel → (inv U rel)),true
+rel,del,false,rea,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,del,false,true,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,del,false,false,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,true,false,rea,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,true,false,true,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,true,false,false,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,false,false,rea,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,false,false,true,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,false,false,false,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
+rel,del,true,rea,true,((trig ∧ ¬rel) → F(¬del U (rel ∨ rea))),(¬rel → F(¬del U (rel ∨ rea))),true
+rel,del,true,false,true,((trig ∧ ¬rel) → F(¬del U rel)),(¬rel → F(¬del U rel)),true
+rel,false,true,rea,true,((trig ∧ ¬rel) → F(rel ∨ rea)),F(rel ∨ rea),true
+rel,true,true,rea,true,((trig ∧ ¬rel) → F(rel ∨ rea)),F(rel ∨ rea),true
+rel,false,true,false,true,((trig ∧ ¬rel) → F(rel)),F(rel),true
+rel,true,true,false,true,((trig ∧ ¬rel) → F(rel)),F(rel),true
+rel,del,true,true,inv,((trig ∧ ¬rel) → inv),(¬rel → inv),true
+rel,true,true,true,inv,((trig ∧ ¬rel) → inv),(¬rel → inv),true
+rel,false,true,true,inv,((trig ∧ ¬rel) → inv),(¬rel → inv),true
+false,false,fin,rea,inv,(trig → (G(inv ∧ ¬fin) ∨ (fin ∧ (inv U rea)))),(G(inv ∧ ¬fin) ∨ (fin ∧ (inv U rea))),true
+false,del,fin,rea,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rea))))),(G(inv ∧ ¬fin) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rea)))),true
+false,true,fin,rea,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ rea)))),(G(inv ∧ ¬fin) ∨ (inv U (fin ∧ rea))),true
+false,del,fin,true,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),(G(inv ∧ ¬fin) ∨ (inv U fin)),true
+false,true,fin,true,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),(G(inv ∧ ¬fin) ∨ (inv U fin)),true
+false,false,fin,true,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),(G(inv ∧ ¬fin) ∨ (inv U fin)),true
+false,del,true,rea,inv,(trig → (inv U ((inv ∧ ¬del) U rea))),(inv U ((inv ∧ ¬del) U rea)),true
+false,true,true,rea,inv,(trig → (inv U rea)),(inv U rea),true
+false,false,true,rea,inv,(trig → (inv U rea)),(inv U rea),true
+false,del,true,rea,true,(trig → F(¬del U rea)),F(¬del U rea),true
+false,del,fin,rea,true,(trig → F(fin ∧ (¬del U rea))),F(fin ∧ (¬del U rea)),true
+false,true,fin,rea,true,(trig → F(fin ∧ rea)),F(fin ∧ rea),true
+false,false,fin,rea,true,(trig → F(fin ∧ rea)),F(fin ∧ rea),true
+false,true,true,rea,true,(trig → F(rea)),F(rea),true
+false,false,true,rea,true,(trig → F(rea)),F(rea),true
+false,false,fin,false,true,(trig → G(¬fin)),G(¬fin),true
+false,del,fin,false,true,(trig → G(¬fin)),G(¬fin),true
+false,true,fin,false,true,(trig → G(¬fin)),G(¬fin),true
+false,true,fin,false,inv,(trig → G(inv ∧ ¬fin)),G(inv ∧ ¬fin),true
+false,false,fin,false,inv,(trig → G(inv ∧ ¬fin)),G(inv ∧ ¬fin),true
+false,del,fin,false,inv,(trig → G(inv ∧ ¬fin)),G(inv ∧ ¬fin),true
+false,del,false,rea,inv,(trig → G(inv)),G(inv),true
+false,del,false,true,inv,(trig → G(inv)),G(inv),true
+false,del,false,false,inv,(trig → G(inv)),G(inv),true
+false,true,false,rea,inv,(trig → G(inv)),G(inv),true
+false,true,false,true,inv,(trig → G(inv)),G(inv),true
+false,true,false,false,inv,(trig → G(inv)),G(inv),true
+false,false,false,rea,inv,(trig → G(inv)),G(inv),true
+false,false,false,true,inv,(trig → G(inv)),G(inv),true
+false,false,false,false,inv,(trig → G(inv)),G(inv),true
+false,del,true,true,inv,(trig → inv),inv,true
+false,true,true,true,inv,(trig → inv),inv,true
+false,false,true,true,inv,(trig → inv),inv,true
+rel,del,false,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,del,false,true,false,¬(trig ∧ ¬rel),rel,true
+rel,del,false,false,false,¬(trig ∧ ¬rel),rel,true
+rel,true,false,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,true,false,true,false,¬(trig ∧ ¬rel),rel,true
+rel,true,false,false,false,¬(trig ∧ ¬rel),rel,true
+rel,false,false,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,false,false,true,false,¬(trig ∧ ¬rel),rel,true
+rel,false,false,false,false,¬(trig ∧ ¬rel),rel,true
+rel,false,true,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,del,true,true,false,¬(trig ∧ ¬rel),rel,true
+rel,true,true,true,false,¬(trig ∧ ¬rel),rel,true
+rel,false,true,true,false,¬(trig ∧ ¬rel),rel,true
+rel,false,true,false,false,¬(trig ∧ ¬rel),rel,true
+rel,del,true,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,del,true,false,false,¬(trig ∧ ¬rel),rel,true
+rel,true,true,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,true,true,false,false,¬(trig ∧ ¬rel),rel,true
+rel,true,fin,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,true,fin,true,false,¬(trig ∧ ¬rel),rel,true
+rel,true,fin,false,false,¬(trig ∧ ¬rel),rel,true
+rel,false,fin,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,false,fin,true,false,¬(trig ∧ ¬rel),rel,true
+rel,del,fin,rea,false,¬(trig ∧ ¬rel),rel,true
+rel,del,fin,true,false,¬(trig ∧ ¬rel),rel,true
+rel,del,fin,false,false,¬(trig ∧ ¬rel),rel,true
+rel,false,fin,false,false,¬(trig ∧ ¬rel),rel,true
+false,del,fin,rea,false,¬trig,false,true
+false,del,fin,true,false,¬trig,false,true
+false,del,fin,false,false,¬trig,false,true
+false,del,true,rea,false,¬trig,false,true
+false,del,true,true,false,¬trig,false,true
+false,del,true,false,false,¬trig,false,true
+false,del,false,rea,false,¬trig,false,true
+false,del,false,true,false,¬trig,false,true
+false,del,false,false,false,¬trig,false,true
+false,true,fin,rea,false,¬trig,false,true
+false,true,fin,true,false,¬trig,false,true
+false,true,fin,false,false,¬trig,false,true
+false,true,true,rea,false,¬trig,false,true
+false,true,true,true,false,¬trig,false,true
+false,true,true,false,false,¬trig,false,true
+false,true,false,rea,false,¬trig,false,true
+false,true,false,true,false,¬trig,false,true
+false,true,false,false,false,¬trig,false,true
+false,false,fin,rea,false,¬trig,false,true
+false,false,fin,true,false,¬trig,false,true
+false,false,fin,false,false,¬trig,false,true
+false,false,true,rea,false,¬trig,false,true
+false,false,true,true,false,¬trig,false,true
+false,false,true,false,false,¬trig,false,true
+false,false,false,rea,false,¬trig,false,true
+false,false,false,true,false,¬trig,false,true
+false,false,false,false,false,¬trig,false,true
+false,true,true,false,true,¬trig,false,true
+false,del,true,false,inv,¬trig,false,true
+false,del,true,false,true,¬trig,false,true
+false,true,true,false,inv,¬trig,false,true
+false,false,true,false,inv,¬trig,false,true
+false,false,true,false,true,¬trig,false,true
 true,del,fin,rea,inv,true,true,true
-false,del,true,true,inv,true,true,true
 false,del,fin,true,true,true,true,true
 false,true,fin,true,true,true,true,true
 false,false,fin,true,true,true,true,true
@@ -76,33 +144,6 @@ false,false,true,true,true,true,true,true
 false,del,false,true,true,true,true,true
 false,true,false,true,true,true,true,true
 false,false,false,true,true,true,true,true
-false,del,fin,rea,false,true,true,true
-false,del,fin,true,false,true,true,true
-false,del,fin,false,false,true,true,true
-false,del,true,rea,false,true,true,true
-false,del,true,true,false,true,true,true
-false,del,true,false,false,true,true,true
-false,del,false,rea,false,true,true,true
-false,del,false,true,false,true,true,true
-false,del,false,false,false,true,true,true
-false,true,fin,rea,false,true,true,true
-false,true,fin,true,false,true,true,true
-false,true,fin,false,false,true,true,true
-false,true,true,rea,false,true,true,true
-false,true,true,true,false,true,true,true
-false,true,true,false,false,true,true,true
-false,true,false,rea,false,true,true,true
-false,true,false,true,false,true,true,true
-false,true,false,false,false,true,true,true
-false,false,fin,rea,false,true,true,true
-false,false,fin,true,false,true,true,true
-false,false,fin,false,false,true,true,true
-false,false,true,rea,false,true,true,true
-false,false,true,true,false,true,true,true
-false,false,true,false,false,true,true,true
-false,false,false,rea,false,true,true,true
-false,false,false,true,false,true,true,true
-false,false,false,false,false,true,true,true
 true,del,false,rea,inv,true,true,true
 true,del,false,rea,true,true,true,true
 true,del,false,rea,false,true,true,true
@@ -130,15 +171,6 @@ true,false,false,true,false,true,true,true
 true,false,false,false,inv,true,true,true
 true,false,false,false,true,true,true,true
 true,false,false,false,false,true,true,true
-false,del,false,rea,inv,true,true,true
-false,del,false,true,inv,true,true,true
-false,del,false,false,inv,true,true,true
-false,true,false,rea,inv,true,true,true
-false,true,false,true,inv,true,true,true
-false,true,false,false,inv,true,true,true
-false,false,false,rea,inv,true,true,true
-false,false,false,true,inv,true,true,true
-false,false,false,false,inv,true,true,true
 false,del,false,rea,true,true,true,true
 false,del,false,false,true,true,true,true
 false,true,false,rea,true,true,true,true
@@ -154,24 +186,9 @@ rel,true,false,false,true,true,true,true
 rel,false,false,rea,true,true,true,true
 rel,false,false,true,true,true,true,true
 rel,false,false,false,true,true,true,true
-rel,del,false,rea,false,true,true,true
-rel,del,false,true,false,true,true,true
-rel,del,false,false,false,true,true,true
-rel,true,false,rea,false,true,true,true
-rel,true,false,true,false,true,true,true
-rel,true,false,false,false,true,true,true
-rel,false,false,rea,false,true,true,true
-rel,false,false,true,false,true,true,true
-rel,false,false,false,false,true,true,true
-rel,false,true,rea,false,true,true,true
-rel,del,true,true,inv,true,true,true
 rel,del,true,true,true,true,true,true
-rel,true,true,true,inv,true,true,true
 rel,true,true,true,true,true,true,true
-rel,false,true,true,inv,true,true,true
 rel,false,true,true,true,true,true,true
-false,true,true,true,inv,true,true,true
-false,false,true,true,inv,true,true,true
 true,del,true,true,inv,true,true,true
 true,del,true,true,true,true,true,true
 true,del,true,true,false,true,true,true
@@ -181,22 +198,6 @@ true,true,true,true,false,true,true,true
 true,false,true,true,inv,true,true,true
 true,false,true,true,true,true,true,true
 true,false,true,true,false,true,true,true
-rel,del,true,true,false,true,true,true
-rel,true,true,true,false,true,true,true
-rel,false,true,true,false,true,true,true
-rel,false,true,false,false,true,true,true
-rel,del,true,rea,false,true,true,true
-rel,del,true,false,false,true,true,true
-rel,true,true,rea,false,true,true,true
-rel,true,true,false,false,true,true,true
-rel,true,fin,rea,false,true,true,true
-rel,true,fin,true,false,true,true,true
-rel,true,fin,false,false,true,true,true
-rel,false,fin,rea,false,true,true,true
-rel,false,fin,true,false,true,true,true
-rel,del,fin,rea,false,true,true,true
-rel,del,fin,true,false,true,true,true
-rel,del,fin,false,false,true,true,true
 true,true,true,rea,true,true,true,true
 true,true,true,false,true,true,true,true
 true,del,true,rea,true,true,true,true
@@ -222,7 +223,6 @@ true,true,fin,true,inv,true,true,true
 true,true,fin,false,inv,true,true,true
 true,del,fin,true,inv,true,true,true
 true,del,fin,false,inv,true,true,true
-rel,false,fin,false,false,true,true,true
 true,del,fin,rea,false,true,true,true
 true,del,fin,true,false,true,true,true
 true,del,fin,false,false,true,true,true
