@@ -4,3 +4,5 @@ The algorithm which reduces the complex LTL-semantics formula of EDTL-requiremen
 
 The classification uses the proposed algorithm for simplifying formulas. EDTL requirements belong to the same class if the result of the algorithm is the same formula up to the values of non-constant attributes.
 ![Classification](Classification.png)
+
+![Classification](chart2.png)
