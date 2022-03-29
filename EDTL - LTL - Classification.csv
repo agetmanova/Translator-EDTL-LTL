@@ -1,139 +1,139 @@
 rel,del,fin,rea,inv,trigger = trig,trig = true,trig = false
-rel,false,fin,rea,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U (rel ∨ rea))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U (rel ∨ rea))))),true
-rel,false,fin,false,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U rel)))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (fin ∧ (inv U rel)))),true
-rel,del,fin,rea,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U (rel ∨ rea)))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U (rel ∨ rea)))))),true
-rel,del,fin,false,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rel))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rel))))),true
-rel,true,fin,rea,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ (rel ∨ rea))))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ (rel ∨ rea))))),true
-rel,true,fin,false,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ rel)))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U (fin ∧ rel)))),true
-rel,true,fin,true,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
-rel,false,fin,true,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
-rel,del,fin,true,inv,((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),true
-rel,del,fin,rea,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (¬del U (rel ∨ rea))))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (¬del U (rel ∨ rea))))),true
-rel,del,fin,false,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (¬del U rel)))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (¬del U rel)))),true
-rel,true,fin,rea,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),true
-rel,false,fin,rea,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),true
-rel,true,fin,false,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ rel))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ rel))),true
-rel,false,fin,false,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ rel))),(¬rel → ((¬fin W rel) ∨ F(fin ∧ rel))),true
-rel,true,fin,true,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),(¬rel → ((¬fin W rel) ∨ F(fin))),true
-rel,false,fin,true,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),(¬rel → ((¬fin W rel) ∨ F(fin))),true
-rel,del,fin,true,true,((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),(¬rel → ((¬fin W rel) ∨ F(fin))),true
-rel,del,true,rea,inv,((trig ∧ ¬rel) → (inv U ((inv ∧ ¬del) U (rel ∨ rea)))),(¬rel → (inv U ((inv ∧ ¬del) U (rel ∨ rea)))),true
-rel,del,true,false,inv,((trig ∧ ¬rel) → (inv U ((inv ∧ ¬del) U rel))),(¬rel → (inv U ((inv ∧ ¬del) U rel))),true
-rel,true,true,rea,inv,((trig ∧ ¬rel) → (inv U (rel ∨ rea))),(¬rel → (inv U (rel ∨ rea))),true
-rel,false,true,rea,inv,((trig ∧ ¬rel) → (inv U (rel ∨ rea))),(¬rel → (inv U (rel ∨ rea))),true
-rel,false,true,false,inv,((trig ∧ ¬rel) → (inv U rel)),(¬rel → (inv U rel)),true
-rel,true,true,false,inv,((trig ∧ ¬rel) → (inv U rel)),(¬rel → (inv U rel)),true
-rel,del,false,rea,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,del,false,true,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,del,false,false,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,true,false,rea,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,true,false,true,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,true,false,false,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,false,false,rea,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,false,false,true,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,false,false,false,inv,((trig ∧ ¬rel) → (inv W rel)),(¬rel → (inv W rel)),true
-rel,del,true,rea,true,((trig ∧ ¬rel) → F(¬del U (rel ∨ rea))),(¬rel → F(¬del U (rel ∨ rea))),true
-rel,del,true,false,true,((trig ∧ ¬rel) → F(¬del U rel)),(¬rel → F(¬del U rel)),true
-rel,false,true,rea,true,((trig ∧ ¬rel) → F(rel ∨ rea)),F(rel ∨ rea),true
-rel,true,true,rea,true,((trig ∧ ¬rel) → F(rel ∨ rea)),F(rel ∨ rea),true
-rel,false,true,false,true,((trig ∧ ¬rel) → F(rel)),F(rel),true
-rel,true,true,false,true,((trig ∧ ¬rel) → F(rel)),F(rel),true
-rel,del,true,true,inv,((trig ∧ ¬rel) → inv),(¬rel → inv),true
-rel,true,true,true,inv,((trig ∧ ¬rel) → inv),(¬rel → inv),true
-rel,false,true,true,inv,((trig ∧ ¬rel) → inv),(¬rel → inv),true
-false,false,fin,rea,inv,(trig → (G(inv ∧ ¬fin) ∨ (fin ∧ (inv U rea)))),(G(inv ∧ ¬fin) ∨ (fin ∧ (inv U rea))),true
-false,del,fin,rea,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rea))))),(G(inv ∧ ¬fin) ∨ (inv U (fin ∧ ((inv ∧ ¬del) U rea)))),true
-false,true,fin,rea,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ rea)))),(G(inv ∧ ¬fin) ∨ (inv U (fin ∧ rea))),true
-false,del,fin,true,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),(G(inv ∧ ¬fin) ∨ (inv U fin)),true
-false,true,fin,true,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),(G(inv ∧ ¬fin) ∨ (inv U fin)),true
-false,false,fin,true,inv,(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),(G(inv ∧ ¬fin) ∨ (inv U fin)),true
-false,del,true,rea,inv,(trig → (inv U ((inv ∧ ¬del) U rea))),(inv U ((inv ∧ ¬del) U rea)),true
-false,true,true,rea,inv,(trig → (inv U rea)),(inv U rea),true
-false,false,true,rea,inv,(trig → (inv U rea)),(inv U rea),true
-false,del,true,rea,true,(trig → F(¬del U rea)),F(¬del U rea),true
-false,del,fin,rea,true,(trig → F(fin ∧ (¬del U rea))),F(fin ∧ (¬del U rea)),true
-false,true,fin,rea,true,(trig → F(fin ∧ rea)),F(fin ∧ rea),true
-false,false,fin,rea,true,(trig → F(fin ∧ rea)),F(fin ∧ rea),true
-false,true,true,rea,true,(trig → F(rea)),F(rea),true
-false,false,true,rea,true,(trig → F(rea)),F(rea),true
-false,false,fin,false,true,(trig → G(¬fin)),G(¬fin),true
-false,del,fin,false,true,(trig → G(¬fin)),G(¬fin),true
-false,true,fin,false,true,(trig → G(¬fin)),G(¬fin),true
-false,true,fin,false,inv,(trig → G(inv ∧ ¬fin)),G(inv ∧ ¬fin),true
-false,false,fin,false,inv,(trig → G(inv ∧ ¬fin)),G(inv ∧ ¬fin),true
-false,del,fin,false,inv,(trig → G(inv ∧ ¬fin)),G(inv ∧ ¬fin),true
-false,del,false,rea,inv,(trig → G(inv)),G(inv),true
-false,del,false,true,inv,(trig → G(inv)),G(inv),true
-false,del,false,false,inv,(trig → G(inv)),G(inv),true
-false,true,false,rea,inv,(trig → G(inv)),G(inv),true
-false,true,false,true,inv,(trig → G(inv)),G(inv),true
-false,true,false,false,inv,(trig → G(inv)),G(inv),true
-false,false,false,rea,inv,(trig → G(inv)),G(inv),true
-false,false,false,true,inv,(trig → G(inv)),G(inv),true
-false,false,false,false,inv,(trig → G(inv)),G(inv),true
-false,del,true,true,inv,(trig → inv),inv,true
-false,true,true,true,inv,(trig → inv),inv,true
-false,false,true,true,inv,(trig → inv),inv,true
-rel,del,false,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,del,false,true,false,¬(trig ∧ ¬rel),rel,true
-rel,del,false,false,false,¬(trig ∧ ¬rel),rel,true
-rel,true,false,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,true,false,true,false,¬(trig ∧ ¬rel),rel,true
-rel,true,false,false,false,¬(trig ∧ ¬rel),rel,true
-rel,false,false,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,false,false,true,false,¬(trig ∧ ¬rel),rel,true
-rel,false,false,false,false,¬(trig ∧ ¬rel),rel,true
-rel,false,true,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,del,true,true,false,¬(trig ∧ ¬rel),rel,true
-rel,true,true,true,false,¬(trig ∧ ¬rel),rel,true
-rel,false,true,true,false,¬(trig ∧ ¬rel),rel,true
-rel,false,true,false,false,¬(trig ∧ ¬rel),rel,true
-rel,del,true,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,del,true,false,false,¬(trig ∧ ¬rel),rel,true
-rel,true,true,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,true,true,false,false,¬(trig ∧ ¬rel),rel,true
-rel,true,fin,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,true,fin,true,false,¬(trig ∧ ¬rel),rel,true
-rel,true,fin,false,false,¬(trig ∧ ¬rel),rel,true
-rel,false,fin,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,false,fin,true,false,¬(trig ∧ ¬rel),rel,true
-rel,del,fin,rea,false,¬(trig ∧ ¬rel),rel,true
-rel,del,fin,true,false,¬(trig ∧ ¬rel),rel,true
-rel,del,fin,false,false,¬(trig ∧ ¬rel),rel,true
-rel,false,fin,false,false,¬(trig ∧ ¬rel),rel,true
-false,del,fin,rea,false,¬trig,false,true
-false,del,fin,true,false,¬trig,false,true
-false,del,fin,false,false,¬trig,false,true
-false,del,true,rea,false,¬trig,false,true
-false,del,true,true,false,¬trig,false,true
-false,del,true,false,false,¬trig,false,true
-false,del,false,rea,false,¬trig,false,true
-false,del,false,true,false,¬trig,false,true
-false,del,false,false,false,¬trig,false,true
-false,true,fin,rea,false,¬trig,false,true
-false,true,fin,true,false,¬trig,false,true
-false,true,fin,false,false,¬trig,false,true
-false,true,true,rea,false,¬trig,false,true
-false,true,true,true,false,¬trig,false,true
-false,true,true,false,false,¬trig,false,true
-false,true,false,rea,false,¬trig,false,true
-false,true,false,true,false,¬trig,false,true
-false,true,false,false,false,¬trig,false,true
-false,false,fin,rea,false,¬trig,false,true
-false,false,fin,true,false,¬trig,false,true
-false,false,fin,false,false,¬trig,false,true
-false,false,true,rea,false,¬trig,false,true
-false,false,true,true,false,¬trig,false,true
-false,false,true,false,false,¬trig,false,true
-false,false,false,rea,false,¬trig,false,true
-false,false,false,true,false,¬trig,false,true
-false,false,false,false,false,¬trig,false,true
-false,true,true,false,true,¬trig,false,true
-false,del,true,false,inv,¬trig,false,true
-false,del,true,false,true,¬trig,false,true
-false,true,true,false,inv,¬trig,false,true
-false,false,true,false,inv,¬trig,false,true
-false,false,true,false,true,¬trig,false,true
+rel,del,true,rea,true,G((trig ∧ ¬rel) → (¬del U (rel ∨ rea))),G(¬rel → (¬del U (rel ∨ rea))),true
+rel,del,true,false,true,G((trig ∧ ¬rel) → (¬del U rel)),G(¬rel → (¬del U rel)),true
+rel,del,fin,rea,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (fin ∧ (¬del U (rel ∨ rea)))))),G(¬rel → (G(¬fin) ∨ (¬fin U (fin ∧ (¬del U (rel ∨ rea)))))),true
+rel,del,fin,false,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (fin ∧ (¬del U rel))))),G(¬rel → (G(¬fin) ∨ (¬fin U (fin ∧ (¬del U rel))))),true
+rel,false,fin,rea,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (fin ∧ F(rel ∨ rea))))),G(G(¬fin) ∨ (¬fin U (fin ∧ F(rel ∨ rea)))),true
+rel,false,fin,false,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ F(rel)))))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ F(rel)))))),true
+rel,true,fin,rea,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ rea))))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ rea))))),true
+rel,true,fin,true,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),true
+rel,false,fin,true,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),true
+rel,del,fin,true,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),true
+rel,true,fin,false,true,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U rel))),G(¬rel → (G(¬fin) ∨ (¬fin U rel))),true
+rel,del,true,rea,inv,G((trig ∧ ¬rel) → (inv ∧ ((inv ∧ ¬del) U (rel ∨ (inv ∧ rea))))),G(¬rel → (inv ∧ ((inv ∧ ¬del) U (rel ∨ (inv ∧ rea))))),true
+rel,del,true,true,inv,G((trig ∧ ¬rel) → (inv ∧ ((inv ∧ ¬del) U (rel ∨ inv)))),G(¬rel → (inv ∧ ((inv ∧ ¬del) U (rel ∨ inv)))),true
+rel,del,true,false,inv,G((trig ∧ ¬rel) → (inv ∧ ((inv ∧ ¬del) U rel))),G(¬rel → (inv ∧ ((inv ∧ ¬del) U rel))),true
+rel,del,fin,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U (rel ∨ (inv ∧ rea)))))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U (rel ∨ (inv ∧ rea)))))))),true
+rel,del,fin,true,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U (rel ∨ inv))))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U (rel ∨ inv))))))),true
+rel,del,fin,false,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U rel)))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U rel)))))),true
+rel,false,fin,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U (rel ∨ (inv ∧ rea)))))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U (rel ∨ (inv ∧ rea)))))))),true
+rel,false,fin,true,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U (rel ∨ inv))))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U (rel ∨ inv))))))),true
+rel,false,fin,false,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U rel)))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U rel)))))),true
+rel,true,fin,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (rel ∨ (fin ∧ (inv ∧ rea))))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (rel ∨ (fin ∧ (inv ∧ rea))))))),true
+rel,true,fin,true,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (rel ∨ (fin ∧ inv)))))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (rel ∨ (fin ∧ inv)))))),true
+rel,true,fin,false,inv,G((trig ∧ ¬rel) → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U rel)))),G(¬rel → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U rel)))),true
+rel,del,false,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,del,false,true,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,del,false,false,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,true,false,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,true,false,true,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,true,false,false,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,false,false,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,false,false,true,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,false,false,false,inv,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),true
+rel,true,true,rea,inv,G((trig ∧ ¬rel) → (inv ∧ (rel ∨ (inv ∧ rea)))),G(¬rel → (inv ∧ (rel ∨ (inv ∧ rea)))),true
+rel,true,true,true,inv,G((trig ∧ ¬rel) → (inv ∧ (rel ∨ inv))),G(¬rel → (inv ∧ (rel ∨ inv))),true
+rel,true,true,false,inv,G(trig → rel),G(rel),true
+rel,false,true,rea,inv,G((trig ∧ ¬rel) → (inv U (rel ∨ (inv ∧ rea)))),G(¬rel → (inv U (rel ∨ (inv ∧ rea)))),true
+rel,false,true,true,inv,G((trig ∧ ¬rel) → (inv U (rel ∨ inv))),G(¬rel → (inv U (rel ∨ inv))),true
+rel,false,true,false,inv,G((trig ∧ ¬rel) → (inv U rel)),G(¬rel → (inv U rel)),true
+rel,false,true,rea,true,G((trig ∧ ¬rel) → F(rel ∨ rea)),GF(rel ∨ rea),true
+rel,false,true,false,true,G((trig ∧ ¬rel) → F(rel)),GF(rel),true
+false,del,fin,rea,false,G(¬trig),false,true
+false,del,fin,true,false,G(¬trig),false,true
+false,del,fin,false,false,G(¬trig),false,true
+false,del,true,rea,false,G(¬trig),false,true
+false,del,true,true,false,G(¬trig),false,true
+false,del,true,false,false,G(¬trig),false,true
+false,del,false,rea,false,G(¬trig),false,true
+false,del,false,true,false,G(¬trig),false,true
+false,del,false,false,false,G(¬trig),false,true
+false,true,fin,rea,false,G(¬trig),false,true
+false,true,fin,true,false,G(¬trig),false,true
+false,true,fin,false,false,G(¬trig),false,true
+false,true,true,rea,false,G(¬trig),false,true
+false,true,true,true,false,G(¬trig),false,true
+false,true,true,false,false,G(¬trig),false,true
+false,true,false,rea,false,G(¬trig),false,true
+false,true,false,true,false,G(¬trig),false,true
+false,true,false,false,false,G(¬trig),false,true
+false,false,fin,rea,false,G(¬trig),false,true
+false,false,fin,true,false,G(¬trig),false,true
+false,false,fin,false,false,G(¬trig),false,true
+false,false,true,rea,false,G(¬trig),false,true
+false,false,true,true,false,G(¬trig),false,true
+false,false,true,false,false,G(¬trig),false,true
+false,false,false,rea,false,G(¬trig),false,true
+false,false,false,true,false,G(¬trig),false,true
+false,false,false,false,false,G(¬trig),false,true
+false,true,true,false,true,G(¬trig),false,true
+false,del,true,false,inv,G(¬trig),false,true
+false,del,true,false,true,G(¬trig),false,true
+false,true,true,false,inv,G(¬trig),false,true
+false,false,true,false,inv,G(¬trig),false,true
+false,false,true,false,true,G(¬trig),false,true
+false,del,true,rea,true,G(trig → (¬del U rea)),G(¬del U rea),true
+false,false,fin,false,true,G(trig → (¬fin)),G(¬fin),true
+false,del,fin,false,true,G(trig → (¬fin)),G(¬fin),true
+false,true,fin,false,true,G(trig → (¬fin)),G(¬fin),true
+false,del,fin,rea,true,G(trig → (G(¬fin) ∨ (¬fin U (fin ∧ (¬del U rea))))),G(G(¬fin) ∨ (¬fin U (fin ∧ (¬del U rea)))),true
+false,false,fin,rea,true,G(trig → (G(¬fin) ∨ (¬fin U (fin ∧ F(rea))))),G(G(¬fin) ∨ (¬fin U (fin ∧ F(rea)))),true
+false,true,fin,rea,true,G(trig → (G(¬fin) ∨ (¬fin U (fin ∧ rea)))),G(G(¬fin) ∨ (¬fin U (fin ∧ rea))),true
+false,del,true,rea,inv,G(trig → (inv ∧ ((inv ∧ ¬del) U (inv ∧ rea)))),G(inv ∧ ((inv ∧ ¬del) U (inv ∧ rea))),true
+false,del,fin,rea,inv,G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U (inv ∧ rea))))))),G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U (inv ∧ rea)))))),true
+false,true,fin,rea,inv,G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv ∧ rea)))))),G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv ∧ rea))))),true
+false,false,fin,rea,inv,G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U (inv ∧ rea))))))),G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ (inv U (inv ∧ rea)))))),true
+false,true,fin,true,inv,G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),true
+false,false,fin,true,inv,G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),true
+false,true,fin,false,inv,G(trig → (inv ∧ G((inv ∧ ¬fin)))),G(inv ∧ G((inv ∧ ¬fin))),true
+false,false,fin,false,inv,G(trig → (inv ∧ G((inv ∧ ¬fin)))),G(inv ∧ G((inv ∧ ¬fin))),true
+false,del,fin,false,inv,G(trig → (inv ∧ G((inv ∧ ¬fin)))),G(inv ∧ G((inv ∧ ¬fin))),true
+false,true,true,rea,inv,G(trig → (inv ∧ rea)),G(inv ∧ rea),true
+false,false,true,rea,inv,G(trig → (inv U (inv ∧ rea))),G(inv U (inv ∧ rea)),true
+false,del,false,rea,inv,G(trig → (inv)),G(inv),true
+false,del,false,true,inv,G(trig → (inv)),G(inv),true
+false,del,false,false,inv,G(trig → (inv)),G(inv),true
+false,true,false,rea,inv,G(trig → (inv)),G(inv),true
+false,true,false,true,inv,G(trig → (inv)),G(inv),true
+false,true,false,false,inv,G(trig → (inv)),G(inv),true
+false,false,false,rea,inv,G(trig → (inv)),G(inv),true
+false,false,false,true,inv,G(trig → (inv)),G(inv),true
+false,false,false,false,inv,G(trig → (inv)),G(inv),true
+rel,true,true,rea,true,G(trig → (rel ∨ rea)),G(rel ∨ rea),true
+false,false,true,rea,true,G(trig → F(rea)),GF(rea),true
+false,del,fin,true,inv,G(trig → inv),G(inv),true
+false,del,true,true,inv,G(trig → inv),G(inv),true
+false,true,true,true,inv,G(trig → inv),G(inv),true
+false,false,true,true,inv,G(trig → inv),G(inv),true
+false,true,true,rea,true,G(trig → rea),G(rea),true
+rel,del,false,rea,false,G(trig → rel),G(rel),true
+rel,del,false,true,false,G(trig → rel),G(rel),true
+rel,del,false,false,false,G(trig → rel),G(rel),true
+rel,true,false,rea,false,G(trig → rel),G(rel),true
+rel,true,false,true,false,G(trig → rel),G(rel),true
+rel,true,false,false,false,G(trig → rel),G(rel),true
+rel,false,false,rea,false,G(trig → rel),G(rel),true
+rel,false,false,true,false,G(trig → rel),G(rel),true
+rel,false,false,false,false,G(trig → rel),G(rel),true
+rel,false,true,rea,false,G(trig → rel),G(rel),true
+rel,del,true,true,false,G(trig → rel),G(rel),true
+rel,true,true,true,false,G(trig → rel),G(rel),true
+rel,false,true,true,false,G(trig → rel),G(rel),true
+rel,false,true,false,false,G(trig → rel),G(rel),true
+rel,del,true,rea,false,G(trig → rel),G(rel),true
+rel,del,true,false,false,G(trig → rel),G(rel),true
+rel,true,true,rea,false,G(trig → rel),G(rel),true
+rel,true,true,false,false,G(trig → rel),G(rel),true
+rel,true,true,false,true,G(trig → rel),G(rel),true
+rel,true,fin,rea,false,G(trig → rel),G(rel),true
+rel,true,fin,true,false,G(trig → rel),G(rel),true
+rel,true,fin,false,false,G(trig → rel),G(rel),true
+rel,false,fin,rea,false,G(trig → rel),G(rel),true
+rel,false,fin,true,false,G(trig → rel),G(rel),true
+rel,del,fin,rea,false,G(trig → rel),G(rel),true
+rel,del,fin,true,false,G(trig → rel),G(rel),true
+rel,del,fin,false,false,G(trig → rel),G(rel),true
+rel,false,fin,false,false,G(trig → rel),G(rel),true
 true,del,fin,rea,inv,true,true,true
 false,del,fin,true,true,true,true,true
 false,true,fin,true,true,true,true,true

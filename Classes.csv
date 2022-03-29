@@ -1,42 +1,18 @@
 Class formula,capacity
-((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),2
-((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin ∧ rel))),2
-((trig ∧ ¬rel) → (inv U (rel ∨ rea))),2
-((trig ∧ ¬rel) → (inv U rel)),2
-((trig ∧ ¬rel) → F(rel ∨ rea)),2
-((trig ∧ ¬rel) → F(rel)),2
-(trig → (inv U rea)),2
-(trig → F(fin ∧ rea)),2
-(trig → F(rea)),2
-(¬rel → ((¬fin W rel) ∨ F(fin ∧ (rel ∨ rea)))),2
-(¬rel → ((¬fin W rel) ∨ F(fin ∧ rel))),2
-(¬rel → (inv U (rel ∨ rea))),2
-(¬rel → (inv U rel)),2
-F(rel ∨ rea),2
-F(rel),2
-(inv U rea),2
-F(fin ∧ rea),2
-F(rea),2
-((trig ∧ ¬rel) → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),3
-((trig ∧ ¬rel) → ((¬fin W rel) ∨ F(fin))),3
-((trig ∧ ¬rel) → inv),3
-(trig → (G(inv ∧ ¬fin) ∨ (inv U fin))),3
-(trig → G(¬fin)),3
-(trig → G(inv ∧ ¬fin)),3
-(trig → inv),3
-(¬rel → (((inv ∧ ¬fin) W rel) ∨ (inv U fin))),3
-(¬rel → ((¬fin W rel) ∨ F(fin))),3
-(¬rel → inv),3
-(G(inv ∧ ¬fin) ∨ (inv U fin)),3
+G(rel),29
+G(inv),13
 G(¬fin),3
-G(inv ∧ ¬fin),3
-inv,3
-((trig ∧ ¬rel) → (inv W rel)),9
-(trig → G(inv)),9
-(¬rel → (inv W rel)),9
-G(inv),9
-¬(trig ∧ ¬rel),27
-rel,27
-¬trig,33
+G(¬trig),33
+G(trig → rel),29
+G(trig → inv),13
+G(trig → (¬fin)),3
+G(inv ∧ G((inv ∧ ¬fin))),3
+G(trig → (inv ∧ G((inv ∧ ¬fin)))),3
+G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),9
+G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
+G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),9
+G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
+G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),2
+G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),2
 false,33
-true,216
+true,459
