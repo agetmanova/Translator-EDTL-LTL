@@ -1,18 +1,19 @@
 Class formula,capacity
-G(rel),29
+G(rel),28
 G(inv),13
 G(¬fin),3
 G(¬trig),33
-G(trig → rel),29
-G(trig → inv),13
-G(trig → (¬fin)),3
-G(inv ∧ G((inv ∧ ¬fin))),3
-G(trig → (inv ∧ G((inv ∧ ¬fin)))),3
+G(inv ∧ ¬fin),3
+G(trig → rel),28
+G(trig → inv),4
+G(trig → G(inv)),9
+G(trig → G(¬fin)),3
+G(trig → G(inv ∧ ¬fin)),3
 G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),9
 G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
 G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),9
 G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
-G(inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),2
-G(trig → (inv ∧ (G((inv ∧ ¬fin)) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),2
+G(inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),2
+G(trig → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),2
 false,33
 true,459
