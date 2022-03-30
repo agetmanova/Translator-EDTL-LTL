@@ -6,3 +6,5 @@ The classification uses the proposed algorithm for simplifying formulas. EDTL re
 ![Classification](Classification.png)
 
 ![Classification](chart2.png)
+
+[![DOI](https://zenodo.org/badge/459495007.svg)](https://zenodo.org/badge/latestdoi/459495007)
