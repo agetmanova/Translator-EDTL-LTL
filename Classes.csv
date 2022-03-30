@@ -1,19 +1,19 @@
-Class formula,capacity
-G(rel),28
-G(inv),13
-G(¬fin),3
-G(¬trig),33
-G(inv ∧ ¬fin),3
-G(trig → rel),28
-G(trig → inv),4
-G(trig → G(inv)),9
-G(trig → G(¬fin)),3
-G(trig → G(inv ∧ ¬fin)),3
-G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),9
-G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
-G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),9
-G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
-G(inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),2
-G(trig → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),2
-false,33
-true,459
+№,Class formula,capacity
+1,G(rel),28
+2,G(inv),13
+3,G(¬fin),3
+4,G(¬trig),33
+5,G(inv ∧ ¬fin),3
+6,G(trig → rel),28
+7,G(trig → inv),4
+8,G(trig → G(inv)),9
+9,G(trig → G(¬fin)),3
+10,G(trig → G(inv ∧ ¬fin)),3
+11,G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),9
+12,G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
+13,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),9
+14,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
+15,G(inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),2
+16,G(trig → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),2
+17,false,33
+18,true,459

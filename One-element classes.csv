@@ -33,7 +33,7 @@ G((trig ∧ ¬rel) → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin �
 G((trig ∧ ¬rel) → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U rel)))))),G(¬rel → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ ((inv ∧ ¬del) U rel))))))
 G((trig ∧ ¬rel) → (inv ∧ ((inv ∧ ¬del) U rel))),G(¬rel → (inv ∧ ((inv ∧ ¬del) U rel)))
 G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U rel))),G(¬rel → (G(¬fin) ∨ (¬fin U rel)))
-G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ rea))))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ rea)))))
+G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧  (rel ∨ rea)))))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ (rel ∨ rea))))))
 G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ F(rel)))))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ F(rel))))))
 G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ (¬del U (rel ∨ rea))))))),G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ (fin ∧ (¬del U (rel ∨ rea)))))))
 G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (fin ∧ F(rel ∨ rea))))),G(G(¬fin) ∨ (¬fin U (fin ∧ F(rel ∨ rea))))
