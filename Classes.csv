@@ -1,19 +1,20 @@
-№,Class formula,capacity
-1,G(rel),28
-2,G(inv),13
-3,G(¬fin),3
-4,G(¬trig),33
-5,G(inv ∧ ¬fin),3
-6,G(trig → rel),28
-7,G(trig → inv),4
-8,G(trig → G(inv)),9
-9,G(trig → G(¬fin)),3
-10,G(trig → G(inv ∧ ¬fin)),3
-11,G(¬rel → (inv ∧ (G(inv) ∨ (inv U rel)))),9
-12,G(¬rel → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
-13,G((trig ∧ ¬rel) → (inv ∧ (G(inv) ∨ (inv U rel)))),9
-14,G((trig ∧ ¬rel) → (G(¬fin) ∨ (¬fin U (rel ∨ fin)))),3
-15,G(inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv)))),2
-16,G(trig → (inv ∧ (G(inv ∧ ¬fin) ∨ ((inv ∧ ¬fin) U (fin ∧ inv))))),2
-17,false,33
-18,true,459
+Номер класса,Формула класса,Вес класса
+#1,G(rel),29
+#2,G(inv),15
+#3,G(¬fin),3
+#4,G(¬trig),33
+#5,G(trig → rel),29
+#6,G(¬fin U rel),3
+#7,G(inv ∧ ¬fin),3
+#8,G(trig → inv),3
+#9,G(inv ∧ F(rel)),9
+#10,G(trig → G(inv)),9
+#11,G(trig → G(¬fin)),3
+#12,G(trig → (¬fin U rel)),3
+#13,G(trig → G(inv ∧ ¬fin)),3
+#14,G(trig → (G(inv) ∨ (inv U rel))),9
+#15,G(trig → (G(inv ∧ ¬fin) ∨ (inv U (fin ∧ inv)))),3
+,false,33
+,true,459
+,одноэлементные,80
+,многоэлементные ,15
